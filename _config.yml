@@ -11,7 +11,7 @@ description: >
 lang: ko-KR 
 
 #baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://log4dark.github.io # the base hostname & protocol for your site
 git_address: https://github.com/log4dark/log4dark.github.io
 #git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
@@ -46,19 +46,19 @@ defaults:
     layout: post
     sectionid: blog
 
-    #- scope:
-    #    path: _docs
-    #    type: docs
-    #  values:
-    #    layout: docs
-    #    sectionid: docs
-    #    seo:
-    #      type: "WebPage"
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
 
 collections:
-  #  docs:
-  #    permalink: /:collection/:path/
-  #    output: true
+  docs:
+    permalink: /:collection/:path/
+    output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
