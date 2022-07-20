@@ -1,3 +1,7 @@
+# Configure the remote_theme plugin with the gh-pages branch
+# or the specific tag
+remote_theme: aksakalli/jekyll-doc-theme@gh-pages
+
 # Site settings
 title: log4dark 
 email: arthur.jeon@gmail.com
